@@ -11,7 +11,7 @@ body {
   padding-right: 5em;
   padding-top: 3em;
 
-  background-image: url("https://media.discordapp.net/attachments/993702831850786886/1117894163686510752/bgJC_copy.jpg");
+  background-image: url("https://images.pexels.com/photos/7135013/pexels-photo-7135013.jpeg");
   /* background-image: url("https://images.unsplash.com/photo-1591311337241-cecfd26f1da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGVib2FyZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
   background-repeat: no-repeat;
 
@@ -44,7 +44,7 @@ main {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
-  color:  #333;
+  color: #333;
   background-color: #ffffff;
   border-top: 2px solid #ccc;
   text-align: center;
@@ -56,6 +56,7 @@ footer {
 footer a {
   color: #7B58E5;
 }
+
 /* ---------------- */
 
 
@@ -78,7 +79,7 @@ footer a {
   margin-bottom: 10px;
   /* text-align: center; */
   color: #000000;
-  
+
   /* Use a modern looking font */
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
@@ -95,6 +96,7 @@ footer a {
   text-align: center;
   color: #333;
 }
+
 select {
   display: inline-block;
   font-size: 16px;
@@ -127,7 +129,7 @@ option:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  }
+}
 
 .chat-form textarea[type="text"] {
   flex-grow: 1;
@@ -152,7 +154,7 @@ option:hover {
   outline: 0;
 }
 
-#recordButton{
+#recordButton {
   background-color: blue;
   color: white;
   border: none;
@@ -176,6 +178,7 @@ option:hover {
   max-width: 4em;
   max-height: 2.4em;
 }
+
 /* ---------------- */
 
 
@@ -183,12 +186,13 @@ option:hover {
 
 /* ---------------- */
 /* Modification if the screen size is small */
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1200px) {
   .chat-form button[type="submit"] {
-  min-width: 50px;
-  max-width: 100px;
+    min-width: 50px;
+    max-width: 100px;
+  }
 }
-}
+
 /* ---------------- */
 
 
@@ -209,10 +213,13 @@ option:hover {
 }
 
 .user img {
-  float: right; /* float the image to the left */
-  margin-left: 10px; /* add some space between image and paragraph */
+  float: right;
+  /* float the image to the left */
+  margin-left: 10px;
+  /* add some space between image and paragraph */
   margin-right: 10px;
-  max-width: 30%; /* adjust the width of the image */
+  max-width: 30%;
+  /* adjust the width of the image */
   top: 0;
   left: 0;
   width: 40px;
@@ -221,10 +228,13 @@ option:hover {
 }
 
 .error img {
-  float: left; /* float the image to the left */
-  margin-right: 10px; /* add some space between image and paragraph */
+  float: left;
+  /* float the image to the left */
+  margin-right: 10px;
+  /* add some space between image and paragraph */
   margin-left: 10px;
-  max-width: 30%; /* adjust the width of the image */
+  max-width: 30%;
+  /* adjust the width of the image */
   top: 0;
   left: 0;
   width: 40px;
@@ -235,10 +245,13 @@ option:hover {
 }
 
 .aibot img {
-  float: left; /* float the image to the left */
-  margin-right: 10px; /* add some space between image and paragraph */
+  float: left;
+  /* float the image to the left */
+  margin-right: 10px;
+  /* add some space between image and paragraph */
   margin-left: 10px;
-  max-width: 30%; /* adjust the width of the image */
+  max-width: 30%;
+  /* adjust the width of the image */
   top: 0;
   left: 0;
   width: 40px;
@@ -295,8 +308,10 @@ option:hover {
 }
 
 .loading-animation {
-  float: left; /* float the image to the left */
-  margin-right: 10px; /* add some space between image and paragraph */
+  float: left;
+  /* float the image to the left */
+  margin-right: 10px;
+  /* add some space between image and paragraph */
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -305,6 +320,7 @@ option:hover {
   border-top-color: #3498db;
   animation: spin 1s ease-in-out infinite;
 }
+
 .loading-text {
   margin-bottom: 10px;
   padding: 10px;
@@ -324,6 +340,7 @@ option:hover {
 .purple {
   color: #7B58E5;
 }
+
 /* ---------------- */
 
 
@@ -335,9 +352,11 @@ option:hover {
   0% {
     left: 0%;
   }
+
   50% {
     left: 50%
   }
+
   100% {
     left: calc(100% - 100px)
   }
@@ -354,8 +373,8 @@ option:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
-

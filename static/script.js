@@ -31,7 +31,7 @@ const addMessage = (message, role, imgSrc) => {
 //Section: Calling the model
 const sendMessage = async (message) => {
   // addMessage(message, 'user','user.jpeg');
-  addMessage(message, 'user','../static/user.jpeg');
+  addMessage(message, 'user', '../static/user.jpeg');
   // Loading animation
   const loadingElement = document.createElement('div');
   const loadingtextElement = document.createElement('p');
@@ -42,11 +42,11 @@ const sendMessage = async (message) => {
   messagesContainer.appendChild(loadingtextElement);
 
   async function makePostRequest(msg) {
-    const url = 'www.example.com';  // Make a POST request to this url
+    const url = ' http://127.0.0.1:5000/chatbot';  // Make a POST request to this url
     const requestBody = {
       prompt: msg
     };
-  
+
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -55,7 +55,7 @@ const sendMessage = async (message) => {
         },
         body: JSON.stringify(requestBody)
       });
-  
+
       const data = await response.text();
       // Handle the response data here
       console.log(data);
@@ -66,11 +66,11 @@ const sendMessage = async (message) => {
       return error
     }
   }
-  
+
   var res = await makePostRequest(message);
-  
-  data = {"response": res};
-  
+
+  data = { "response": res };
+
   // Deleting the loading animation
   const loadanimation = document.querySelector('.loading-animation');
   const loadtxt = document.querySelector('.loading-text');
@@ -81,14 +81,14 @@ const sendMessage = async (message) => {
     // Handle the error here
     const errorMessage = JSON.stringify(data);
     // addMessage(errorMessage, 'error','Error.png');
-    addMessage(errorMessage, 'error','../static/Error.png');
+    addMessage(errorMessage, 'error', '../static/Error.png');
   } else {
     // Process the normal response here
     const responseMessage = data['response'];
     // addMessage(responseMessage, 'aibot','Bot_logo.png');
-    addMessage(responseMessage, 'aibot','../static/Bot_logo.png');
+    addMessage(responseMessage, 'aibot', '../static/Bot_logo.png');
   }
-  
+
   //!!!!! code to  save the content in history
   //
 };
